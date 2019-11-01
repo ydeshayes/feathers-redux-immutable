@@ -1,0 +1,45 @@
+{
+  "name": "feathers-redux",
+  "version": "1.0.0",
+  "description": "Library boilerplate",
+  "main": "lib/feathers-redux.min.js",
+  "scripts": {
+    "build": "webpack --env.mode=production",
+    "test": "mocha ./tests/.setup.js ./tests/**/*.spec.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/register": "^7.6.2",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-loader": "^3.0.2",
+    "jsdom": "^15.2.0",
+    "mocha": "^6.2.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "yargs": "^14.2.0"
+  },
+  "keywords": [
+    "boilerplate",
+    "library",
+    "starter-kit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ydeshayes/js-lib-boilerplate.git"
+  },
+  "author": "Yann Deshayes",
+  "bugs": {
+    "url": "https://github.com/ydeshayes/js-lib-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ydeshayes/js-lib-boilerplate",
+  "license": "ISC",
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "reselect": "^4.0.0"
+  }
+}
