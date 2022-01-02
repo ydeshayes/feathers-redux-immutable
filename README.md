@@ -1,6 +1,10 @@
 # React redux immutable
-## Getting started
+## Installation
+```
+npm i feathers-redux-realtime
+```
 
+## Getting started
 ```
 new Reducer(httpApp, 'todos', {
   paginate: true,
