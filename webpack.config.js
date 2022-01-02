@@ -1,8 +1,9 @@
 var env = require('yargs').argv.env;
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 var libraryName = 'feathers-redux';
 
-var plugins = [], outputFile;
+var plugins = [new ESLintPlugin()], outputFile;
 
 if (env.mode === 'production') {
   outputFile = libraryName + '.min.js';
@@ -26,18 +27,13 @@ const config = {
         test: /(\.js)$/,
         use: 'babel-loader',
         exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /(\.js)$/,
-        use: 'eslint-loader',
-        exclude: /node_modules/
       }
     ]
   },
   plugins: plugins
 };
 
-if (env.mode === 'production') {
+if (env === 'mode=production') {
   config.mode = 'production';
 }
 
